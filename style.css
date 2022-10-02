@@ -18,6 +18,23 @@ time, mark, audio, video {
   font-size: 62.5%;
 }
 
+html::selection, body::selection, div::selection, span::selection, applet::selection, object::selection, iframe::selection,
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, blockquote::selection, pre::selection,
+a::selection, abbr::selection, acronym::selection, address::selection, big::selection, cite::selection, code::selection,
+del::selection, dfn::selection, em::selection, img::selection, ins::selection, kbd::selection, q::selection, s::selection, samp::selection,
+small::selection, strike::selection, strong::selection, sub::selection, sup::selection, tt::selection, var::selection,
+b::selection, u::selection, i::selection, center::selection,
+dl::selection, dt::selection, dd::selection, ol::selection, ul::selection, li::selection,
+fieldset::selection, form::selection, label::selection, legend::selection,
+table::selection, caption::selection, tbody::selection, tfoot::selection, thead::selection, tr::selection, th::selection, td::selection,
+article::selection, aside::selection, canvas::selection, details::selection, embed::selection,
+figure::selection, figcaption::selection, footer::selection, header::selection, hgroup::selection,
+menu::selection, nav::selection, output::selection, ruby::selection, section::selection, summary::selection,
+time::selection, mark::selection, audio::selection, video::selection {
+  color: white;
+  background-color: #07404d;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -128,26 +145,25 @@ html {
 .content__discover {
   font-size: 3rem;
   margin-top: 30vh;
-  margin-left: 20rem;
+  margin-left: 10vw;
   font-weight: 300;
 }
 
 .content__title {
   text-transform: uppercase;
   font-size: 17rem;
-  margin-left: 20rem;
+  margin-left: 10vw;
 }
 
 .content__title--right {
   margin: 45vh 5rem;
   color: white;
-  mix-blend-mode: screen;
 }
 
 .content__subtitle {
   text-transform: uppercase;
   font-size: 3rem;
-  margin-left: 20rem;
+  margin-left: 10vw;
   margin-top: 10rem;
   font-weight: 400;
 }
@@ -158,14 +174,14 @@ html {
   line-height: 1.6;
   margin: 2rem 0;
   margin-right: 30%;
-  margin-left: 20rem;
+  margin-left: 10vw;
 }
 
 .content__button {
   background-color: transparent;
   border: none;
   color: white;
-  margin-left: 20rem;
+  margin-left: 10vw;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -217,8 +233,14 @@ html {
 .logo__item {
   width: 3rem;
   height: auto;
+  transition: all 1s;
 }
 
 .logo__item:first-child {
   width: 1.4rem;
+}
+
+.logo__item:hover {
+  cursor: pointer;
+  mix-blend-mode: luminosity;
 }
